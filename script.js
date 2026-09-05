@@ -101,5 +101,19 @@ function removeFromCart(index) {
   drawCart();
 }
 
+let formModal = document.getElementById("form-modal");
+let openFormButton = document.getElementById("open-form-btn");
+
+openFormButton.onclick = function() {
+  formModal.style.display = "block";
+}
+
+
+window.onclick = function(event) {
+  if (event.target == formModal) {
+    formModal.style.display = "none";
+  }
+}
+
 drawProductCards();
 drawCart();
