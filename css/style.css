@@ -76,27 +76,6 @@ h1 {
   margin-bottom: 10px;
 }
 
-.amount-btn {
-  background-color: #222;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  padding: 2px 8px;
-  cursor: pointer;
-  font-size: 14px;
-}
-
-.amount-btn:hover {
-  background-color: #444;
-}
-
-.amount-value {
-  display: inline-block;
-  min-width: 20px;
-  text-align: center;
-  font-weight: bold;
-}
-
 .add-to-cart-btn,
 .remove-from-cart-btn,
 #open-form-btn,
@@ -176,13 +155,69 @@ footer {
   margin-top: 40px;
 }
 
-@media (max-width: 480px) {
-  .product {
-    width: 100%;
+@media (max-width: 600px) {
+  header,
+  footer {
+    padding: 15px 10px;
+  }
+
+  header h1 {
+    font-size: 22px;
   }
 
   nav a {
     display: inline-block;
-    margin: 5px;
+    margin: 5px 8px;
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 20px;
+    margin: 20px 0 10px;
+  }
+
+  #products {
+    padding: 0 10px;
+    gap: 10px;
+  }
+
+  .product {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .product-image {
+    height: 180px;
+  }
+
+  #cart {
+    padding: 0 10px;
+  }
+
+  .cart-product {
+    font-size: 14px;
+  }
+
+  #open-form-btn {
+    width: 90%;
+    max-width: 320px;
+  }
+
+  .form-content,
+  .order-created-content {
+    width: 95%;
+    margin: 20% auto;
+    padding: 15px;
+  }
+
+  .form-content input[type="text"] {
+    font-size: 16px; /* не даёт iOS автоматически зумить страницу при фокусе на поле */
+  }
+
+  .add-to-cart-btn,
+  .remove-from-cart-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
   }
 }
