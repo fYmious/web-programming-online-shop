@@ -45,7 +45,7 @@
           <label for="delivery-address">Адрес доставки:</label> <br />
           <input
             type="text"
-            id="fname"
+            id="delivery-address"
             name="fname"
             placeholder="ул. Пушкина, д. Колотушкина"
             required
@@ -53,14 +53,18 @@
           <label for="phone-number">Контактный номер телефона:</label> <br />
           <input
             type="text"
-            id="lname"
+            id="phone-number"
             name="lname"
             placeholder="88005553535"
             required
           /><br /><br />
-          <input type="submit" value="Создать заказ" />
+          <input id="create-order-btn" type="submit" value="Создать заказ" />
         </form>
       </div>
+    </div>
+
+    <div id="order-created-modal" class="order-created-modal">
+      <div class="order-created-content">Заказ создан!</div>
     </div>
 
     <footer>Самый лучший магазин.</footer>
